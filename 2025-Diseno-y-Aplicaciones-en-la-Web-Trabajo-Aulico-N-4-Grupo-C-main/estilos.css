@@ -1,0 +1,370 @@
+/* Elimina márgenes y paddings por defecto de todos los elementos.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.formulario {
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+.formulario>label {
+  text-align: center;
+  color: #4db6ac;
+
+}
+
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="number"]:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formulario input[type="submit"],
+.formulario input[type="button"]{
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover,
+.formulario input[type="button"]{
+  background-color: #e65c50;
+}
+
+.formulario button[type="submit"] {
+    background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.caja {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+  margin: auto;
+  transition: background-color 0.3s ease;
+}
+
+/* Define fuente base, fondo claro, color de texto, altura de línea y padding general del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+/* Estilo del header: fondo color coral, texto blanco, centrado y con sombra sutil */
+header {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de logo y título: flexbox para alinear horizontalmente y adaptarse al espacio */
+.logo-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Imagen del logo: redondeada, tamaño fijo, cubre su contenedor */
+.logo-contenedor img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+/* Título dentro del logo-contenedor */
+.logo-contenedor h1 {
+  font-size: 2.2rem;
+}
+
+/* Barra de navegación: fondo amarillo claro, padding y bordes redondeados */
+nav {
+  background-color: #ffd54f;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Lista de navegación: elimina viñetas y distribuye elementos horizontalmente con flexbox */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Enlaces del nav: estilo base sin subrayado, con transición en hover */
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover en enlaces: cambia el color a negro */
+a:hover {
+  color: #000;
+}
+
+/* Título dentro de la sección de navegación */
+.navegacion h2 {
+  text-align: center;
+}
+
+/* Main: centra el contenido, máximo ancho definido, fondo blanco y bordes redondeados */
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Las secciones usan flexbox en columna y espaciado entre elementos */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Encabezados de sección con color de énfasis y subrayado */
+section h2 {
+  color: #4db6ac;
+  border-bottom: 2px solid #4db6ac;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Contenedor de productos: disposición en filas, adaptativa */
+.producto_contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Caja de producto individual: fondo blanco, borde suave, efecto hover con sombra */
+.producto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para levantar el producto */
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del producto */
+.producto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Imagen del producto: tamaño fijo, centrada, redondeada y con borde claro */
+.producto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #eee;
+  margin: 10px auto;
+}
+
+/* Estilo de tablas: bordes colapsados, centradas y con sombra */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Celdas de la tabla */
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Encabezado de tabla con fondo suave */
+th {
+  background-color: #fff3e0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Estilo para los artículos: separación y borde decorativo */
+article {
+  margin-top: 50px;
+  border-top: 2px dashed #e0e0e0;
+  padding-top: 20px;
+}
+
+/* Footer con fondo coral, texto blanco y redondeado */
+footer {
+  background-color: #ff6f61;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0 0 10px 10px;
+  margin-top: 50px;
+}
+
+/* Para pantallas hasta 1024px: nav vertical, productos más pequeños */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 45%;
+  }
+}
+
+.error-message {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+    color: #b71c1c;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    color: #1b5e20;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0 4px 4px 0;
+}
+
+.success-message h3 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+.success-message p {
+    margin-bottom: 8px;
+}
+
+
+/* Para pantallas hasta 768px: texto más chico, productos casi full width */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .logo-contenedor h1,
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Para pantallas hasta 480px: logo vertical, textos e imágenes más pequeños */
+@media (max-width: 480px) {
+  .logo-contenedor {
+    flex-direction: column;
+  }
+
+  .logo-contenedor img {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}
